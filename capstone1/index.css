@@ -1,0 +1,144 @@
+body {
+	font-family: 'Inconsolata', sans-serif;
+	background-color: #34013f;
+	padding-top: 70px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; 
+}
+
+/*Controls smooth scrolling */
+:target {
+  scroll-margin-top: 70px; 
+}
+
+li {
+	color: white;
+}
+
+h1, h2, h3, h4 {
+	color: white;
+}
+
+h1 {
+	font-size: 4em;
+}
+
+h2 {
+	font-size: 1.5em;
+}
+
+h3 {
+	text-align: center;
+	font-size: 3rem;
+}
+
+svg {
+    width: 100%; 
+    max-width: 500px; 
+    height: auto; 
+}
+
+img {
+	position: relative;
+	width: 55px; 
+	height:55px; 
+}
+
+p {
+	color: white;
+}
+
+.simple-line {
+  border-radius: 10px; 
+  background-color: white;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  height: 5px;
+}
+
+#card-color {
+	color: red;
+}
+
+
+/* Navbar styling */
+.nav-link {
+	color: black !important;
+	font-weight: 600 !important;
+	font-size: 1.2em;
+	padding: 1px;
+}
+
+/* Change color of navbar font when clicked and overrides bootstrap default color */
+.nav-link:hover {
+	background-color: black;
+  color: white !important;
+}
+
+/* Adjust specific positions of stacks on large sceens */
+
+@media (min-width: 992px) { 
+  .svg-container {
+    position: relative;
+  }
+  #svg-stack-top {
+  	top: 80px;
+    right: 80px;
+    z-index: 3;
+  }
+  #svg-stack-mid {
+  	right: 10px;
+    bottom: 0px; 
+    z-index: 2;
+  }
+  #svg-stack-bottom {
+  	right: 110px;
+    bottom: 80px; 
+    z-index: 1;
+}
+}
+
+/* Change positions of stacks on medium screns */
+@media (min-width: 768px) and (max-width: 991px) { 
+  .svg-container {
+    position: relative;
+  }
+  #svg-stack-top {
+  	top: 40px;
+    right: 0px;
+    z-index: 3;
+  }
+  #svg-stack-mid {
+    bottom: 15px;
+  	right: 30px;
+    z-index: 2;
+  }
+  #svg-stack-bottom {
+  	right: 65px;
+    bottom: 70px; 
+    z-index: 1;
+}
+}
+
+#svg-stack-top:hover path {
+	fill: #FF5349;
+}
+
+#svg-stack-mid:hover path {
+	fill: #87CEEB;
+}
+
+#svg-stack-bottom:hover path {
+	fill: #EFDC75;
+}
+
