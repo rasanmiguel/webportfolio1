@@ -180,7 +180,7 @@
 			<div class="col-lg-4 col-md-6 col-sm-12 mb-4">
 				<div class="card">
 				  <img class="card-img-top" src="./images/red-orange.png" alt="Card image cap">
-				  <div class="card-body">
+				  <div id="first-card" class="card-body">
 				    <h5 class="card-title">Zuitt Capstone Project 3</h5>
 				    <p class="card-text text-dark">Final capstone project from Zuitt</p>
 				  </div>
@@ -190,7 +190,7 @@
 			<div class="col-lg-4 col-md-6 col-sm-12 mb-4">
 				<div class="card">
 				  <img class="card-img-top" src="./images/sky-blue.png" alt="Card image cap">
-				  <div class="card-body">
+				  <div id="second-card" class="card-body">
 				    <h5 class="card-title">JavaScript Tic-Tac-Toe</h5>
 				    <p class="card-text text-dark">A JavaScript based tic-tac-toe game.</p>
 				  </div>
@@ -202,7 +202,7 @@
 					<div id="card-color">
 				  <img class="card-img" src="./images/yellow-cream.png" alt="Card image cap">
 				  </div>
-				  <div class="card-body">
+				  <div id="third-card" class="card-body">
 				    <h5 class="card-title">Python Youtube to mp3 Converter App</h5>
 				    <p class="card-text text-dark">A simple Python app that converts youtube links.</p>
 				  </div>
@@ -221,19 +221,19 @@
 		              <div class="col-12 col-md-8 col-lg-8 col-xl-4">
 		            <form id="form-col" class="bg-primary p-3 rounded">
 		              <div class="form-group">
-		                <label for="form-control-input-Name">Name</label>
+		                <label class="form-titles" for="form-control-input-Name">Name</label>
 		                <input type="text" class="form-control" id="form-control-input-Name" placeholder="Your Name">
 		              </div>
 		              <div class="form-group">
-		                <label for="form-control-input-Email">Email Address</label>
+		                <label class="form-titles" for="form-control-input-Email">Email Address</label>
 		                <input type="email" class="form-control" id="form-control-input-Email" placeholder="name@example.com">
 		              </div>
 		              <div class="form-group">
-		                <label for="form-control-input-Contact">Contact Number</label>
+		                <label class="form-titles" for="form-control-input-Contact">Contact Number</label>
 		                <input type="number" class="form-control" id="form-control-input-Contact" placeholder="+63 900 000 0000">
 		              </div>
 		              <div class="form-group">
-		                <label for="form-control-select-Concern">Purpose</label>
+		                <label class="form-titles" for="form-control-select-Concern">Purpose</label>
 		                <select class="form-control" id="form-control-select-Concern">
 		                  <option>Quick Greetings</option>
 		                  <option>Hire Me?</option>
@@ -241,7 +241,7 @@
 		                </select>
 		              </div>
 		              <div class="form-group">
-		                <label for="form-control-textarea-Message">Message</label>
+		                <label class="form-titles" for="form-control-textarea-Message">Message</label>
 		                <textarea class="form-control" id="form-control-textarea-Message" rows="3"></textarea>
 		              </div>
 		              <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#modalDiv">Send Email</button>
